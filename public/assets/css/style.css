@@ -1,0 +1,398 @@
+header {
+    display: flex;
+    width: 100%;
+    height: 3.35rem;
+    background-color: rgba( 35, 36, 56 );
+    font-family: 'Russo One', sans-serif;
+}
+
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+    cursor: pointer;
+  }
+
+.head-list {
+    color: white;
+    float: bottom;
+    margin-left: 2rem;
+}
+
+.home {
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5rem;
+    font-size: 25px;
+    color: white;
+}
+
+.elements {
+    list-style: none;
+    display: flex;
+    float: right;
+    margin-right: 15%;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.elements > li {
+    margin-left: 18%;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.anchorOne {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.anchorTwo {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.anchorThree {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + content {
+    padding-top: 102px;
+}
+
+.changer {
+    color: white;
+}
+
+.parallax {
+    background-image: url("../images/background.png");
+    min-height: 800px;
+
+    /* PARALLAX EFFECT */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-container > img {
+    width: 100%;
+    height: 40%;
+    background-position: cover;
+}
+
+.arrow {
+    transform: translateY(35rem); 
+    text-align: center;
+}
+
+.arrow > img {
+    position: absolute; 
+    height: 45px;
+    width: 45px;
+    animation: arrow 2s infinite;
+    margin-left: -22px;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.no-show {
+    display: none;
+}
+
+.about {
+    background-color: rgba( 35, 36, 56 );
+    width: 100%;
+    height: 80%;
+    color: white;
+    /* clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%); */
+}
+
+.about > p{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-container > div >img {
+    margin-top: 4rem;
+    width: 95px;
+    height: 95px;
+    margin-left: 10px;
+}
+
+#first:hover {
+    animation: loop 1.2s cubic-bezier(.2,.71,.61,.49);
+}
+
+@keyframes loop {
+    0%{
+        transform: rotate(60deg);
+    }
+    20% {
+        transform: rotate(120deg);
+    }
+    40% {
+        transform: rotate(180deg);
+    }
+    60%{
+        transform: rotate(240deg);
+    }
+    80%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#second:hover {
+    animation: close-in-out 2s ease-in-out;
+}
+
+@keyframes close-in-out {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    15% {
+        transform: scale(2);
+        opacity: 0.5;
+    } 
+    30% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    45% {
+        transform: scale(2);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    75% {
+        transform: scale(2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#third:hover {
+    animation: jumper 1s ease-out;
+}
+
+@keyframes jumper {
+    0% {
+        transform: rotate(7deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(2) rotate(-10deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.img-description {
+    padding-left: 4rem;
+    padding-right: 3rem;
+    margin-bottom: 7rem;
+    text-align: justify;
+    hyphens: auto;
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 3rem;
+}
+
+.text-container {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    
+    hyphens: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.manual-margin {
+    background-color: rgb(35, 36, 56);
+    width: 100%;
+    height: 108px;
+}
+
+.course {
+    background-image: linear-gradient(rgb(35, 36, 56) 25%, rgb( 0, 175, 194) 70%);
+    width: 100%;
+    height: 570px;
+    color: white;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 32px;
+
+    margin-left: 550px;
+    display: block;
+}
+
+.course > div {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin-left: 650px;
+    margin-top: 40px;
+    display: block;
+}
+
+.course > a {
+    text-decoration: none;
+}
+
+.course > a > button {
+    display: flex;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    background-color: rgb(35, 36, 56);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 15px 32px;
+
+    margin-left: 740px;
+    margin-top: 60px;
+    display: block;
+}
+
+.course > a > button:hover {
+    background-color: white;
+    color: rgb(35, 36, 56);
+}
+
+.course-section-img {
+    width: 400px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-top: -200px;   
+    display: block; 
+}
+
+.course-section-img-2 {
+    width: 400px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-top: 0px;   
+    display: block; 
+}
+
+.course-2 {
+    background-image: linear-gradient(rgb(35, 36, 56) 25%, rgb( 53, 45, 150) 70%);
+    color: white;
+    width: 100%;
+    height: 500px;
+}
+
+.subtitle-2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 32px;
+
+    margin-left: 600px;
+    margin-top: -100px;
+    display: block;
+}
+
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    display: block;
+    margin-left: 620px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    background-color: rgb(34, 36, 57);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.socials > img {
+    margin-top: 0px;
+    width: 38px;
+    height: 38px;
+}
+
+.instagram {
+    margin-left: 10px;
+}
+
+.youtube {
+    margin-left: 10px;
+}
+
+.footer > small {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+

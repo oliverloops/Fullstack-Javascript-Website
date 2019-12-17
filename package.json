@@ -1,0 +1,29 @@
+{
+  "name": "asterdots",
+  "version": "1.0.0",
+  "description": "asterdots_website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asterdots/First-landing-page.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Asterdots",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asterdots/First-landing-page/issues"
+  },
+  "homepage": "https://github.com/Asterdots/First-landing-page#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.5.3",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2"
+  }
+}
